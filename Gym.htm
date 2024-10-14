@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kesari Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: url('img/Delhi_OG.jpg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            font-family: 'Cinzel', serif;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            top: 29px;
+            left: 11px;
+            /* border: 2px solid blue; */
+            height: 90px;
+        }
+
+        .left p {
+            margin: 2px;
+            text-align: center;
+            color: darkorange;
+
+        }
+
+        .mid {
+            margin: 45px auto;
+            font-size: 18px;
+            display: block;
+            width: 37%;
+        }
+
+        .right {
+            /* border: 3px solid rgb(0, 4, 255); */
+            position: absolute;
+            display: inline-block;
+            right: 40px;
+            top: 42px;
+            width: 161px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            width: max-content;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: rgb(255, 0, 0);
+            padding: 25px;
+        }
+
+        .btn {
+            border-radius: 20px;
+            border-color: rgba(95, 158, 160, 0.136);
+            height: 25px;
+            font-family: 'Cinzel', serif;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            color: rgb(255, 140, 0);
+            background-color: rgba(95, 158, 160, 0.136);
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: black;
+            text-decoration: underline;
+        }
+
+        .left img {
+            width: 50px;
+            height: 50px;
+            padding-left: 25%;
+        }
+
+        .container {
+            font-size: 20px;
+            width: 900px;
+            height: fit-content;
+            margin-top: 105px;
+        }
+
+        .container h3 {
+            text-align: center;
+        }
+
+        .container,
+        .formgrp {
+            display: block;
+            text-align: center;
+        }
+
+        .formgrp input {
+            text-align: center;
+            font-family: 'Cinzel', serif;
+            width: 400px;
+            border-radius: 20px;
+            height: 30px;
+            margin: 5px;
+            font-size: 19px;
+        }
+
+        #Gen {
+            font-size: 18px;
+            margin-top: 13px;
+        }
+
+        .check {
+            font-size: 18px;
+            margin-top: 6px;
+            margin-bottom: 20px;
+        }
+
+        .container button {
+            height: 30px;
+            width: 260px;
+            font-family: 'Cinzel', serif;
+            font-size: 19px;
+            border-radius: 20px;
+            border-color: rgba(95, 158, 160, 0.78);
+        }
+
+        .container button:hover {
+            background-color: rgba(0, 0, 0, 0.784);
+            color: darkorange;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="Img/Om.png" alt="">
+            <p>Kesari Fitness</p>
+        </div>
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Annual Plan</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Locate Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h3>Unlock Your Potential, Embrace the Power Within!</h3>
+        <form action="backend.php">
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter Your Mobile NO.">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter Your e-mail (Optional)">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter Your Address">
+            </div>
+            <div class="gender" id="Gen">
+                Gender : Male <input type="radio" name="gender" id="gender"> Female <input type="radio" name="gender"
+                    id="gender">
+            </div>
+            <div class="check">
+                <input type="checkbox" name="" id="Agree"> I Agree Terms and Conditions
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
